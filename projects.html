@@ -128,7 +128,8 @@
                 without modifying the segmented image, but the program was made more robust through a combination
                 blurring, adaptive thresholding, eroding, and dilating.
               </p>
-              <img src="assets/img/cmr_keyboard.gif" class="figure-img img-fluid d-block w-100">
+              <img src="assets/img/cmr_keyboard.gif" class="figure-img img-fluid d-block w-100"
+                style="border-radius: 10px;">
               <figcaption class="figure-caption text-center">Executing the program on an picture taken 1 meter away
                 (shown at the end). The user is shown a sharpened and unwarped view of the keyboard to type on via
                 clicking. The clicked locations are converted into real world coordiantes.</figcaption>
@@ -147,7 +148,8 @@
               <p>Sadly, the tool was never used in competition as the filter wheel was scrapped and competition
                 requirements changed. Nevertheless, the reimplementation was an overall success and exciting project to
                 work on.</p>
-              <img src="assets/img/filter_wheel.png" class="figure-img img-fluid d-block w-100">
+              <img src="assets/img/filter_wheel.png" class="figure-img img-fluid d-block w-100"
+                style="border-radius: 10px;">
               <figcaption class="figure-caption text-center">Running the rock classifier on part of the validation set.
                 The top 3 predictions for each rock are shown with their confidence levels.</figcaption>
             </div>
@@ -168,7 +170,7 @@
               frame.</p>
             <p>
               <img src="assets/img/flappy_high.gif" class="img-fluid d-block w-200"
-                style="max-width: 400px; float: right; margin-left: 30px; margin-bottom: 20px;">
+                style="border-radius: 16px; max-width: 400px; float: right; margin-left: 30px; margin-bottom: 20px;">
             <p>Our first model was trained using a lookup table for each possible state-action pair updated every
               frame according to the Bellman Equation. Since the game's states are mostly continuous, we discretized the
               states enough to allow the agent to update all possible states frequently enough while also preserving
