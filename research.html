@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MyPortfolio Bootstrap Template - Works</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#main-navbar").load("navbar.html");
+    });
+  </script>
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <div id="main-navbar"></div>
+
+  <main id="main">
+
+    <!-- ======= Works Section ======= -->
+    <section class="section site-portfolio">
+      <div class="container">
+
+        <div data-aos="fade-up">
+          <h2>Publications in Review</h2>
+          <p>Yash Sharma, Yuki Wang, Kelly Chen, <b>Maximus Pace</b>, Sanjiban Choudhury. Video2Demo: Grounding
+            Videos in State-Action Demonstrations. <i>Submitted to ICLR 2024</i></p>
+        </div>
+
+        <div data-aos="fade-up" id="visuomotor">
+          <h2 style="padding-bottom: 20px;">Visuomotor Imitation Learning Research</h2>
+          <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="100">
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <div class="aspect-ratio">
+                <img class="img-fluid" src="assets/img/stretch.gif">
+              </div>
+            </div>
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <div class="aspect-ratio">
+                <img class="img-fluid" src="assets/img/pick.mov">
+              </div>
+            </div>
+            <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+              <div class="aspect-ratio">
+                <img class="img-fluid" src="assets/img/stretch_moving.m4v">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section class="section pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <p>I joined the People and Robots Teaching and Learning (PoRTaL) lab in March, 2023 and have since been
+          conducting research in visuomotor policy learning.</p>
+        <p>My primary focus on imitation learning centered around training a robust grasping policy on the mobile
+          manipulator Stretch.</p>
+        <p>After collectind hundreds of teleoperated demonstrations, I experimented with training various imitation
+          learning models including sequence-based policies and diffusion policies.
+          I also tested the performance of regression and classification models for discretized and continuous action
+          spaces, further testing different methods of selecting what action the robot should perform given the model's
+          output.</p>
+        <p>I also encountered many of the challenges surrounding imitation learning. In particular, I worked extensively
+          on a bimodal distribution, where the action of extending an arm out was nearly always a valid action chocie
+          per the data, but correctively rotating the wrist to point toward the target was necessary at a certain point,
+          despite always having lower probability as an action choice. Through weighted loss functions, categorial
+          distribution sampling, added recovery data, and eventually separating action prediction from goal location
+          prediction to simplify each step, I was able to train successful grasping policies while also gaining a strong
+          understanding of the fundamentals of imitation learning.</p>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer"></div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
