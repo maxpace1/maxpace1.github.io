@@ -155,6 +155,13 @@ h6,
   background: #eceff2;
 }
 
+.research-intro {
+  padding: 16px 16px 16px 16px;
+  background: #eceff2;
+  text-align: justify;
+  margin-bottom: 16px;
+}
+
 .testimonial-wrap .testimonial {
   text-align: center;
   margin: 0 auto;
