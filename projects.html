@@ -121,7 +121,7 @@
               <p>I designed a program utilizing the camera on the rover's mast to identify and segment the keyboard,
                 apply a homography and enhance the enhance the image for human visibility, and then allow the operator
                 to click on a key in the image for the rover to maneuver to via inverse kinematics.</p>
-              <p>Ensuring robustness of the keyboard segmentation and corner detection proved itself to be the primary
+              <p>Ensuring robustness of the keyboard segmentation and corner detection proved to be the primary
                 challenge in this project.
                 After experimenting with a variety of segmentation models (including testing various thresholding
                 techniques and training my own models), I eventually found best success, measured as a comparison of
@@ -131,7 +131,7 @@
               </p>
               <img src="assets/img/cmr_keyboard.gif" class="figure-img img-fluid d-block w-100"
                 style="border-radius: 10px;">
-              <figcaption class="figure-caption text-center">Executing the program on an picture taken 1 meter away
+              <figcaption class="figure-caption text-center">Executing the program on a picture taken 1 meter away
                 (shown at the end). The user is shown a sharpened and unwarped view of the keyboard to type on via
                 clicking. The clicked locations are converted into real world coordinates.</figcaption>
             </div>
@@ -147,8 +147,8 @@
                 to see a much higher degree of success (by 70% in validation accuracy) than the prior attempt at an
                 implementation.</p>
               <p>Sadly, the tool was never used in competition as the filter wheel was scrapped and competition
-                requirements changed. Nevertheless, the reimplementation was an overall success and exciting project to
-                work on.</p>
+                requirements changed. Nevertheless, the reimplementation was an overall success and an exciting project
+                to work on.</p>
               <img src="assets/img/filter_wheel.png" class="figure-img img-fluid d-block w-100"
                 style="border-radius: 10px;">
               <figcaption class="figure-caption text-center">Running the rock classifier on part of the validation set.
@@ -187,8 +187,8 @@
               can be.</p>
             <p>Our progress today continues around this idea of data science presentations, and our progress is ongoing.
               We are currently developing a prototype expected to be live by January, 2024.</p>
-            <p>For more information, please check out <a href="https://www.synopsisai.co" target="_blank">our
-                website</a>!</p>
+            <!-- <p>For more information, please check out <a href="https://www.synopsisai.co" target="_blank">our
+                website</a>!</p> -->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/czfZfnhnnl4"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -230,9 +230,8 @@
               however, training progress after this became exponentially slower, since the majority of states the bird
               encountered were ones it already was making the correct choice in, and the states it failed in were
               becoming increasingly rare. To mitigate this, we remodeled the environment to allow the bird to start
-              close to where died so as to let it learn the correct Q values in those critical states more efficiently.
-              This resulted in the bird being able to reach scores well over a million.
-            </p>
+              close to where it died so as to let it learn the correct Q values in those critical states more
+              efficiently. This resulted in the bird being able to reach scores well over a million. </p>
             <p>On my own, I was curious if the Q values could be learned as a continuous function without discretzation
               and utilizing a neural network instead. Upon further reading in Deep Q Networks (DQNs), I attempted to use
               an architecture employing a set of shared layers fed separately into a value function stream and advantage
