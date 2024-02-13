@@ -88,8 +88,8 @@
             <div class="carousel-item">
               <div class="row">
                 <div class="col"><img src="/assets/img/cmr_team_sci.jpg" class="d-block w-100" alt="..."></div>
-                <div class="col"><video autoplay muted playsinline class="d-block w-100" alt="...">
-                    <source src="assets/img/cmr.gif" />
+                <div class="col"><video autoplay muted loop playsinline class="d-block w-100" alt="...">
+                    <source src="assets/img/cmr.gif" type="video/mp4" />
                   </video></div>
                 <div class="col"><img src="assets/img/cmr_fixing.jpg" class="d-block w-100" alt="..."></div>
               </div>
@@ -131,7 +131,8 @@
                 without modifying the segmented image, but the program was made more robust through a combination
                 blurring, adaptive thresholding, eroding, and dilating.
               </p>
-              <video autoplay muted playsinline class="figure-img img-fluid d-block w-100" style="border-radius: 10px;">
+              <video autoplay muted playsinline loop class="figure-img img-fluid d-block w-100"
+                style="border-radius: 10px;">
                 <source src="assets/img/cmr_keyboard.mp4" type="video/mp4" />
               </video>
               <figcaption class="figure-caption text-center">Executing the program on a picture taken 1 meter away
@@ -215,7 +216,7 @@
               trained in the FlapPyBird gym environment, where it can be queried for an action every
               frame.</p>
             <p>
-              <video autoplay muted playsinline class="img-fluid d-block w-200"
+              <video autoplay muted playsinline loop class="img-fluid d-block w-200"
                 style="border-radius: 16px; max-width: 400px; float: right; margin-left: 30px; margin-bottom: 20px;">
                 <source src="assets/img/flappy_high.mp4" type="video/mp4" />
               </video>
