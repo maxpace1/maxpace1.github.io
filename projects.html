@@ -212,8 +212,10 @@
               trained in the FlapPyBird gym environment, where it can be queried for an action every
               frame.</p>
             <p>
-              <img src="assets/img/flappy_high.mp4" class="img-fluid d-block w-200"
+              <video class="img-fluid d-block w-200"
                 style="border-radius: 16px; max-width: 400px; float: right; margin-left: 30px; margin-bottom: 20px;">
+                <source src="assets/img/flappy_high.mp4" type="video/mp4">
+              </video>
             <p>Our first model was trained using a lookup table for each possible state-action pair updated every
               frame according to the Bellman Equation. Since the game's states are mostly continuous, we discretized the
               states enough to allow the agent to update all possible states frequently enough while also preserving
