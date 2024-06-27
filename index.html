@@ -44,6 +44,15 @@
     });
   </script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('video').forEach(video => {
+        video.play().catch(error => console.log('Error trying to play video:', error));
+      });
+    });
+  </script>
+
+
   <!-- =======================================================
   * Template Name: MyPortfolio
   * Updated: Jul 27 2023 with Bootstrap v5.3.1
@@ -65,7 +74,7 @@
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
             <h2>Hey, I'm Max!</h2>
-            <p class="mb-0">Computer Science &amp; Mathematics Major at Cornell University</p>
+            <p class="mb-0">MS in Computer Science at Cornell University</p>
           </div>
         </div>
 
@@ -74,13 +83,14 @@
           <div class="" data-aos="fade-up">
             <div class="testimonial-wrap">
               <div class="testimonial">
-                <img src="assets/img/casual_max.jpg" alt="Image" class="img-fluid">
+                <img src="assets/img/Casual Portrait.png" alt="Image" class="img-fluid">
                 <blockquote>
-                  <p>I'm a senior at Cornell University primarily interested in the intersection of machine
-                    learning and robotics. My research at PoRTaL Lab has focused on training low-level skills on a
-                    mobile manipulator robot, and my work at Cornell Mars Rover has surrounded developing vision
+                  <p>I'm an MS student at Cornell University primarily focused on the intersection of machine
+                    learning and robotics. I also did my undergraduate degree at Cornell double majoring in computer
+                    science and mathematics. My research at PoRTaL Lab has focused on training low-level skills on a
+                    mobile manipulator robot, and my work at Cornell Mars Rover revolved around developing vision
                     systems for mineral identification and keyboard segmentation. I am also a founder and the CTO
-                    of Synopsis, an eLab-backed startup helping executives save time researching. Please feel free
+                    of Synopsis, an eLab-backed startup generating storytelling-based presentations. Please feel free
                     to reach out if you would like to talk with me about anything!</p>
                 </blockquote>
               </div>
@@ -96,7 +106,7 @@
                 <h3>Visuomotor Policy Research</h3>
               </div>
               <div class="aspect-ratio">
-                <video autoplay muted playsinline loop class="img-fluid">
+                <video autoplay muted defaultmuted playsinline loop class="img-fluid">
                   <source src="assets/img/stretch.mp4" type="video/mp4" />
                 </video>
               </div>
