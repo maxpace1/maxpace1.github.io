@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Maximus Pace</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Academicons -->
+  <link href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#main-navbar").load("navbar.html");
+    });
+  </script>
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('video').forEach(video => {
+        video.play().catch(error => console.log('Error trying to play video:', error));
+      });
+    });
+  </script>
+
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Navbar ======= -->
+  <div id="main-navbar"></div>
+
+  <main id="main">
+
+    <!-- ======= Works Section ======= -->
+    <section class="section site-portfolio">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2>Hey, I'm Max!</h2>
+            <p class="mb-0">MS in Computer Science at Cornell University</p>
+          </div>
+        </div>
+
+        <!-- ======= Intro Section ======= -->
+        <section class="section pt-0">
+          <div class="" data-aos="fade-up">
+            <div class="testimonial-wrap">
+              <div class="testimonial">
+                <img src="assets/img/Casual Portrait.png" alt="Image" class="img-fluid">
+                <blockquote>
+                  <p>I'm an MS student at Cornell University studying AI and robotics.
+                    I also did my undergraduate degree at Cornell double majoring in computer science and mathematics.
+                    My research at PoRTaL Lab focuses on learning robot skills from human video demonstrations.
+                    I'm also very passionate about entrepreneurship and am always looking for new opportunities to build
+                    and grow startups.
+                    Please feel free to reach out if you would like to talk with me about anything!</p>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+        </section><!-- End Intro Section -->
+
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="100">
+          <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Visuomotor Policy Research</h3>
+              </div>
+              <div class="aspect-ratio">
+                <video autoplay muted defaultmuted playsinline loop class="img-fluid">
+                  <source src="assets/img/stretch.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Cornell Mars Rover</h3>
+              </div>
+              <div class="aspect-ratio">
+                <video autoplay muted playsinline loop class="img-fluid">
+                  <source src="assets/img/cmr.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </a>
+          </div>
+          <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Learning from Human Videos</h3>
+              </div>
+              <div class="aspect-ratio">
+                <video autoplay muted playsinline loop class="img-fluid">
+                  <source src="assets/img/rhyme_demo.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <h2>Publications</h2>
+          <div style="display: flex; flex-direction: column; gap: 15px; align-items: flex-start;">
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <img src="assets/img/xsim.gif" alt="X-Sim" style="width: 150px; height: auto; object-fit: contain;">
+              <div>
+                <div><b>X-Sim: Cross-Embodiment Learning via Real-to-Sim-to-Real</b></div>
+                <div>Prithwish Dan, Kushal Kedia, Angela Chao, Edward Duan, <b>Maximus Adrian Pace</b>, Wei-Chiu Ma,
+                  Sanjiban Choudhury</div>
+                <div><i>Under Review for the 9th Annual Conference on Robot Learning (CoRL)</i>, 2025. <a
+                    href="https://portal.cs.cornell.edu/X-Sim/">[Website]</a></div>
+                <div style="margin-top: 5px; color: #666;">X-Sim learns robot actions from action-less human videos
+                  using an object-centric reward in simulation, bridging the embodiment gap while increasing data
+                  efficiency and generating diverse synthetic data.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <img src="assets/img/rhyme.png" alt="Rhyme" style="width: 150px; height: auto; object-fit: contain;">
+              <div>
+                <div><b>One-shot imitation under mismatched execution</b></div>
+                <div>Prithwish Dan, Kushal Kedia, Angela Chao, <b>Maximus Adrian Pace</b>, and Sanjiban Choudhury</div>
+                <div><i>International Conference on Robotics and Automation (ICRA)</i>, 2025. <a
+                    href="https://portal.cs.cornell.edu/rhyme/">[Website]</a></div>
+                <div style="margin-top: 5px; color: #666;">RHyME introduces a new framework that enables robots to learn
+                  from watching human demonstrations even when there are differences in execution styles.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <img src="assets/img/apricot.gif" alt="APRICOT" style="width: 150px; height: auto; object-fit: contain;">
+              <div>
+                <div><b>APRICOT: Active Preference Learning and Constraint-Aware Task Planning with LLMs</b></div>
+                <div>Huaxiaoyue Wang, Nathaniel Chin, Gonzalo Gonzalez-Pumariega, Xiangwan Sun, Neha Sunkara, <b>Maximus
+                    Adrian Pace</b>, Jeannette Bohg, Sanjiban Choudhury</div>
+                <div><i>8th Annual Conference on Robot Learning (CoRL)</i>, 2024. <a
+                    href="https://portal-cornell.github.io/apricot/">[Website]</a></div>
+                <div style="margin-top: 5px; color: #666;">APRICOT combines the generative ability of LLMs with Bayesian
+                  active preference learning, allowing robots to interactively query users to reduce uncertainty.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <img src="assets/img/mosaic.gif" alt="MOSAIC" style="width: 150px; height: auto; object-fit: contain;">
+              <div>
+                <div><b>MOSAIC: A Modular System for Assistive and Interactive Cooking</b></div>
+                <div>Huaxiaoyue Wang, Kushal Kedia, Juntao Ren, Rahma Abdullah, Atiksh Bhardwaj, Angela Chao, Kelly Y
+                  Chen, Nathaniel Chin, Prithwish Dan, Xinyi Fan, Gonzalo Gonzalez-Pumariega, Aditya Kompella,
+                  <b>Maximus Adrian Pace</b>, Yash Sharma, Xiangwan Sun, Neha Sunkara, Sanjiban Choudhury
+                </div>
+                <div><i>8th Annual Conference on Robot Learning (CoRL)</i>, 2024. <a
+                    href="https://portal-cornell.github.io/MOSAIC/">[Website]</a></div>
+                <div style="margin-top: 5px; color: #666;">MOSAIC combines large pre-trained models for general tasks
+                  with task-specific modules to enable collaborative cooking.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 20px; align-items: flex-start;">
+              <img src="assets/img/video2demo.png" alt="Video2Demo"
+                style="width: 150px; height: auto; object-fit: contain;">
+              <div>
+                <div><b>Video2Demo: Grounding Videos in State-Action Demonstrations</b></div>
+                <div>Yash Sharma, Yuki Wang, Kelly Chen, <b>Maximus Pace</b>, Sanjiban Choudhury</div>
+                <div><a href="https://openreview.net/pdf?id=ayLov67GxD">[OpenReview]</a></div>
+                <div style="margin-top: 5px; color: #666;">Video2Demo combines GPT-4 with vision-language models to
+                  convert human video demonstrations into temporally coherent state-action sequences for robot imitation
+                  learning.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
+
+  </main><!-- End #main -->
+
+  <div id="footer"></div>
+
+  <!-- ======= Footer ======= -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
