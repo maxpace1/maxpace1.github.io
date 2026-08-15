@@ -73,7 +73,8 @@
 
 
       <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+        <div id="carouselExampleIndicators" class="carousel slide project-gallery" data-aos="fade-up"
+          aria-label="Cornell Mars Rover gallery">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
@@ -203,7 +204,7 @@
               data-title="Synopsis pitch at the Cornell Silicon Valley event">
               <button type="button" aria-label="Play the Synopsis pitch video">Play pitch video</button>
             </div>
-            <figcaption class="figure-caption text-left" style="width: 560px">This video contains our pitch from March,
+            <figcaption class="figure-caption text-left video-caption">This video contains our pitch from March,
               2023 at the Cornell Silicon Valley event in San Fransisco. Our vision for Synopsis has since changed, as
               described above, but our excitement and ambition remain!</figcaption>
           </div>
@@ -221,12 +222,12 @@
               partners. We chose to build an AI for the beloved game of Flappy Bird using Q-Learning. The agent is
               trained in the FlapPyBird gym environment, where it can be queried for an action every
               frame.</p>
-            <p>
-              <video muted playsinline loop preload="none" width="574" height="1018" class="img-fluid d-block w-200 lazy-video"
-                aria-label="Flappy Bird AI preview"
-                style="border-radius: 16px; max-width: 400px; float: right; margin-left: 30px; margin-bottom: 20px;">
+            <div class="flappy-media">
+              <video muted playsinline loop preload="none" width="574" height="1018"
+                class="img-fluid d-block lazy-video flappy-preview" aria-label="Flappy Bird AI preview">
                 <source data-src="assets/img/flappy_high.mp4" type="video/mp4" />
               </video>
+            </div>
             <p>Our first model was trained using a lookup table for each possible state-action pair updated every
               frame according to the Bellman Equation. Since the game's states are mostly continuous, we discretized the
               states enough to allow the agent to update all possible states frequently enough while also preserving
