@@ -14,6 +14,10 @@ body {
   color: #0d1e2d;
 }
 
+html.no-js [data-aos] {
+  pointer-events: auto !important;
+}
+
 a {
   color: #777;
   text-decoration: none;
@@ -517,4 +521,55 @@ h6,
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+video.lazy-video,
+img.lazy-animated-image,
+object.lazy-object {
+  background: #eff1f4;
+}
+
+video.lazy-video {
+  display: block;
+}
+
+.youtube-facade {
+  width: min(100%, 560px);
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #0d1e2d;
+}
+
+.youtube-facade button {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.35);
+  font: inherit;
+  cursor: pointer;
+}
+
+.youtube-facade button:hover,
+.youtube-facade button:focus-visible {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.youtube-facade iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

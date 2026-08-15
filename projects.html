@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="utf-8">
@@ -14,30 +14,17 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&amp;family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function () {
-      $("#main-navbar").load("navbar.html");
-    });
-  </script>
-  <script>
-    $(function () {
-      $("#footer").load("footer.html");
-    });
-  </script>
 
   <!-- =======================================================
   * Template Name: MyPortfolio
@@ -51,14 +38,24 @@
 <body>
 
   <!-- ======= Navbar ======= -->
-  <div id="main-navbar"></div>
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Maximus Pace.</a>
+      <div id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <main id="main">
 
     <section class="section" id="cmr">
       <div class="container">
         <div class="row mb-4 align-items-center">
-          <div data-aos="fade-up">
+          <div>
 
             <h2>Cornell Mars Rover</h2>
             <p>I've had the joy of being a part of the Controls Software subteam of <a
@@ -80,18 +77,26 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
-                <div class="col"><img src="/assets/img/cmr_op.jpg" class="d-block w-100" alt="..."></div>
-                <div class="col"><img src="/assets/img/cmr_rover.jpg" class="d-block w-100" alt="..."></div>
-                <div class="col"><img src="assets/img/cmr_team.jpg" class="d-block w-100" alt="..."></div>
+                <div class="col"><img src="assets/img/cmr_op.jpg" class="d-block w-100" alt="Operating the Cornell Mars Rover"
+                    width="810" height="810" loading="lazy" decoding="async"></div>
+                <div class="col"><img src="assets/img/cmr_rover.jpg" class="d-block w-100" alt="Cornell Mars Rover"
+                    width="2500" height="2500" loading="lazy" decoding="async"></div>
+                <div class="col"><img src="assets/img/cmr_team.jpg" class="d-block w-100" alt="Cornell Mars Rover team"
+                    width="500" height="500" loading="lazy" decoding="async"></div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row">
-                <div class="col"><img src="/assets/img/cmr_team_sci.jpg" class="d-block w-100" alt="..."></div>
-                <div class="col"><video autoplay muted loop playsinline class="d-block w-100" alt="...">
-                    <source src="assets/img/cmr.mp4" type="video/mp4" />
+                <div class="col"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="assets/img/cmr_team_sci.jpg" class="d-block w-100" alt="Rover science team"
+                    width="810" height="810" decoding="async"></div>
+                <div class="col"><video muted loop playsinline preload="none" width="300" height="300" class="d-block w-100 lazy-video"
+                    aria-label="Cornell Mars Rover preview">
+                    <source data-src="assets/img/cmr.mp4" type="video/mp4" />
                   </video></div>
-                <div class="col"><img src="assets/img/cmr_fixing.jpg" class="d-block w-100" alt="..."></div>
+                <div class="col"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="assets/img/cmr_fixing.jpg" class="d-block w-100" alt="Repairing the Cornell Mars Rover"
+                    width="782" height="782" decoding="async"></div>
               </div>
             </div>
           </div>
@@ -131,9 +136,10 @@
                 without modifying the segmented image, but the program was made more robust through a combination
                 blurring, adaptive thresholding, eroding, and dilating.
               </p>
-              <video autoplay muted playsinline loop class="figure-img img-fluid d-block w-100"
+              <video muted playsinline loop preload="none" width="566" height="296" class="figure-img img-fluid d-block w-100 lazy-video"
+                aria-label="Keyboard detection demonstration"
                 style="border-radius: 10px;">
-                <source src="assets/img/cmr_keyboard.mp4" type="video/mp4" />
+                <source data-src="assets/img/cmr_keyboard.mp4" type="video/mp4" />
               </video>
               <figcaption class="figure-caption text-center">Executing the program on a picture taken 1 meter away
                 (shown at the end). The user is shown a sharpened and unwarped view of the keyboard to type on via
@@ -153,8 +159,8 @@
               <p>Sadly, the tool was never used in competition as the filter wheel was scrapped and competition
                 requirements changed. Nevertheless, the reimplementation was an overall success and an exciting project
                 to work on.</p>
-              <img src="assets/img/filter_wheel.png" class="figure-img img-fluid d-block w-100"
-                style="border-radius: 10px;">
+              <img src="assets/img/filter_wheel.png" class="figure-img img-fluid d-block w-100" width="1142" height="746"
+                loading="lazy" decoding="async" style="border-radius: 10px;" alt="Rock classifier predictions">
               <figcaption class="figure-caption text-center">Running the rock classifier on part of the validation set.
                 The top 3 predictions for each rock are shown with their confidence levels.</figcaption>
             </div>
@@ -193,10 +199,10 @@
               We are currently finalizing our product for deployment by end of February, 2024.</p>
             <!-- <p>For more information, please check out <a href="https://www.synopsisai.co" target="_blank">our
                 website</a>!</p> -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/czfZfnhnnl4"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+            <div class="youtube-facade" data-youtube-id="czfZfnhnnl4"
+              data-title="Synopsis pitch at the Cornell Silicon Valley event">
+              <button type="button" aria-label="Play the Synopsis pitch video">Play pitch video</button>
+            </div>
             <figcaption class="figure-caption text-left" style="width: 560px">This video contains our pitch from March,
               2023 at the Cornell Silicon Valley event in San Fransisco. Our vision for Synopsis has since changed, as
               described above, but our excitement and ambition remain!</figcaption>
@@ -216,9 +222,10 @@
               trained in the FlapPyBird gym environment, where it can be queried for an action every
               frame.</p>
             <p>
-              <video autoplay muted playsinline loop class="img-fluid d-block w-200"
+              <video muted playsinline loop preload="none" width="574" height="1018" class="img-fluid d-block w-200 lazy-video"
+                aria-label="Flappy Bird AI preview"
                 style="border-radius: 16px; max-width: 400px; float: right; margin-left: 30px; margin-bottom: 20px;">
-                <source src="assets/img/flappy_high.mp4" type="video/mp4" />
+                <source data-src="assets/img/flappy_high.mp4" type="video/mp4" />
               </video>
             <p>Our first model was trained using a lookup table for each possible state-action pair updated every
               frame according to the Bellman Equation. Since the game's states are mostly continuous, we discretized the
@@ -253,21 +260,32 @@
     </section>
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <div id="footer"></div>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright Max Pace. All Rights Reserved</p>
+          <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="https://scholar.google.com/citations?user=GvFzdWoAAAAJ&amp;hl=en&amp;authuser=1" target="_blank"
+            rel="noopener" aria-label="Google Scholar"><span class="bi bi-mortarboard-fill"></span></a>
+          <a href="https://www.linkedin.com/in/maximuspace" target="_blank" rel="noopener" aria-label="LinkedIn"><span
+              class="bi bi-linkedin"></span></a>
+          <a href="https://www.github.com/maxpace1" target="_blank" rel="noopener" aria-label="GitHub"><span
+              class="bi bi-github"></span></a>
+          <a href="mailto:maxpace1@icloud.com" aria-label="Email"><span class="bi bi-envelope"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script defer src="assets/vendor/aos/aos.js"></script>
+  <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
 
 </body>
 

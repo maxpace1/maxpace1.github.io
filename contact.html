@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="utf-8">
@@ -13,34 +13,18 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Academicons -->
-  <link href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css" rel="stylesheet">
-
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&amp;family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function () {
-      $("#main-navbar").load("navbar.html");
-    });
-  </script>
-  <script>
-    $(function () {
-      $("#footer").load("footer.html");
-    });
-  </script>
 
   <!-- =======================================================
   * Template Name: MyPortfolio
@@ -54,14 +38,24 @@
 <body>
 
   <!-- ======= Navbar ======= -->
-  <div id="main-navbar"></div>
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Maximus Pace.</a>
+      <div id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <main id="main">
 
     <section class="section pb-5">
       <div class="container">
         <div class="row mb-5 align-items-end">
-          <div class="col-md-6" data-aos="fade-up">
+          <div class="col-md-6">
             <h2>Contact</h2>
             <p class="mb-0"> Please feel free to connect with me using any of the below means, and I will get back to
               you as soon as possible!
@@ -101,19 +95,30 @@
 
   </main><!-- End #main -->
 
-  <div id="footer"></div>
-  <a href=" #" class="back-to-top d-flex align-items-center justify-content-center"><i
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright Max Pace. All Rights Reserved</p>
+          <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="https://scholar.google.com/citations?user=GvFzdWoAAAAJ&amp;hl=en&amp;authuser=1" target="_blank"
+            rel="noopener" aria-label="Google Scholar"><span class="bi bi-mortarboard-fill"></span></a>
+          <a href="https://www.linkedin.com/in/maximuspace" target="_blank" rel="noopener" aria-label="LinkedIn"><span
+              class="bi bi-linkedin"></span></a>
+          <a href="https://www.github.com/maxpace1" target="_blank" rel="noopener" aria-label="GitHub"><span
+              class="bi bi-github"></span></a>
+          <a href="mailto:maxpace1@icloud.com" aria-label="Email"><span class="bi bi-envelope"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script defer src="assets/vendor/aos/aos.js"></script>
+  <script defer src="assets/js/main.js"></script>
 
 </body>
 
