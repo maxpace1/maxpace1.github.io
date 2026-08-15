@@ -219,11 +219,6 @@ h6,
   height: auto;
   max-height: 150px;
   object-fit: contain;
-  border-radius: 6px;
-}
-
-.publication-pdf {
-  height: 110px;
 }
 
 .publication-content {
@@ -479,12 +474,11 @@ h6,
   min-height: 44px;
   padding: 0.6rem 0.8rem;
   place-items: center;
-  border-radius: 999px;
 }
 
 .custom-navbar .nav-item.active .nav-link {
   color: #000;
-  background: #eff1f4;
+  box-shadow: inset 0 -2px #0d1e2d;
 }
 
 .custom-navbar .navbar-brand {
@@ -609,7 +603,6 @@ h6,
 .aspect-ratio {
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  border-radius: 12px;
   background: #eff1f4;
 }
 
@@ -617,7 +610,6 @@ h6,
 .project-gallery .carousel-item video {
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .video-caption {
@@ -629,13 +621,15 @@ h6,
   width: min(100%, 400px);
   float: right;
   margin: 0 0 1.25rem 1.875rem;
-  border-radius: 16px;
 }
 
 video.lazy-video,
-img.lazy-animated-image,
-object.lazy-object {
+img.lazy-animated-image {
   background: #eff1f4;
+}
+
+.publication-media.lazy-video {
+  background: transparent;
 }
 
 video.lazy-video {
@@ -737,7 +731,6 @@ video.lazy-video {
 
   .testimonial-wrap {
     padding: 1.5rem 1.125rem 1.75rem;
-    border-radius: 12px;
   }
 
   .testimonial-wrap .testimonial img {
@@ -758,7 +751,6 @@ video.lazy-video {
   .research-intro {
     padding: 1rem;
     text-align: left;
-    border-radius: 12px;
   }
 
   .research-intro h5 {
@@ -796,11 +788,6 @@ video.lazy-video {
   .publication-media {
     width: 100px;
     max-height: 100px;
-    border-radius: 5px;
-  }
-
-  .publication-pdf {
-    height: 78px;
   }
 
   .publication-content {
